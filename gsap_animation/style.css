@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./img/robert-katzki-fyHkeWGOpHM-unsplash.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  margin: 0;
+}
+
+.first-steps {
+  height: 35vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(129, 40, 34, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+}
+
+label {
+  display: none;
+}
+
+input {
+  height: 25%;
+  width: 80%;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #222222;
+  font-size: 1em;
+  opacity: 0;
+  padding: 8px;
+}
+input::-webkit-input-placeholder {
+  color: #a3a3a3;
+}
+input::-moz-placeholder {
+  color: #a3a3a3;
+}
+input:-ms-input-placeholder {
+  color: #a3a3a3;
+}
+input::-ms-input-placeholder {
+  color: #a3a3a3;
+}
+input::placeholder {
+  color: #a3a3a3;
+}
+input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(241, 99, 89);
+}
+
+button {
+  height: 25%;
+  width: 80%;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: rgb(241, 99, 89);
+  font-size: 1em;
+  opacity: 0;
+  cursor: pointer;
+  padding: 0;
+}
+button:hover,
+button:focus {
+  background-color: rgb(209, 70, 93);
+  outline: none;
+}
+
+h1 {
+  color: rgb(241, 99, 89);
+  margin-bottom: 100px;
+  display: none;
+  text-align: center;
+}
+
+svg {
+  width: 70vw;
+  height: 60vh;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .first-steps {
+    height: 160px;
+    width: 350px;
+  }
+  input, button {
+    height: 40px;
+    width: 70%;
+  }
+}
